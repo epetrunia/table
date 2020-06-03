@@ -1,1 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    margin: auto;
+}
+
+table{
+    width: 50%;
+    height: 600px;
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    font-size: 1.2em;
+    height: 200px;
+    color: white;
+    text-align: center;
+}
+
+.first-th {
+    width: 28%;
+    background: #7887AB;
+}
+
+.second-th {
+    background: #4B5D86;
+}
+
+.third-th {
+    background: #2A3C69;
+}
+
+.fourth-th {
+    background: #162955;
+}
+
+.fifth-th {
+    background: #101B3B;
+}
+
+.prices {
+    width: 18%;
+}
+
+.price-value{
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+th{
+    height: 150px;
+    padding: 1.5em;
+}
+
+tbody {
+    --background-light: #F3F3F3;
+    --background-medium: #ececec;
+    --background-dark: #DBDBDB;
+
+    text-transform: capitalize;
+    text-align: center;
+}
+
+tbody td {
+    padding: 1em 2em;
+}
+tr > td:first-child {
+    text-align: left;
+}
+
+.dark-row td:nth-child(odd) {
+    background: var(--background-dark);
+}
+
+.dark-row td:nth-child(even) {
+    background: var(--background-medium);
+}
+.light-row td:nth-child(odd) {
+    background: var(--background-medium);
+}
+
+.light-row td:nth-child(even) {
+    background: var(--background-light);
+}
+
+td button {
+    background: var(--background-dark);
+    text-transform: uppercase;
+    padding: 10px 25px;
+    color: #2f2f2f;
+    border: 1px solid #2f2f2f;
+    cursor: pointer;
+}
